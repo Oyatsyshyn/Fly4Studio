@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="./style/style.css" rel="stylesheet" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karantina:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/images/logo.png" />
+    <title>FLY4STUDIO</title>
+  </head>
+  <body>
+    <header>
+      <div class="HeaderContainer">
+        <img alt="" src="./assets/images/logo.png" />
+        <div id="HeaderMenu" class="HeaderMenu">
+          <nav>
+            <a class="NavLink" href="#home">Головна</a>
+            <a class="NavLink" href="#about">Про нас</a>
+            <a class="NavLink" href="#sphere">Сфера послуг</a>
+            <a class="NavLink" href="#equipment">Технічне обладнання</a>
+            <a class="NavLink" href="#portfolio">Портфоліо</a>
+            <a class="NavLink" href="#contacts">Контакти</a>
+          </nav>
+        </div>
+        <div id="burger" onclick="toggle()" class="BurgerMenu">
+          <div id="lineUpper" class="lineUpper"></div>
+          <div id="lineCenter" class="lineCenter"></div>
+          <div id="lineLower" class="lineLower"></div>
+        </div>
+      </div>
+    </header>
+    <div id="home" class="Main">
+      <div class="MainContainer">
+        <img alt="" src="./assets/images/fly4studio.png" />
+        <p>
+          Cтворює інноваційні рішення та індивідуальний підхід для абсолютно
+          нового покоління аерозйомки.
+        </p>
+        <button onclick="{toggleContactUS()}" class="ContactUSButton">
+          Contact Us
+        </button>
+      </div>
+    </div>
+    <div id="about" class="AboutUs">
+      <div class="AboutContainer">
+        <div id="AboutUsText">
+          <h2 class="AboutUsMainText">Про нас</h2>
+          <p class="AboutUsText">
+            Cтворює інноваційні рішення та індивідуальний підхід для абсолютно
+            нового покоління аерозйомки. Cтворює інноваційні рішення та
+            індивідуальний підхід для абсолютно нового покоління аерозйомки.
+          </p>
+        </div>
+        <div class="AboutUsPhoto">
+          <img alt="" src="./assets/images/AboutUsPhoto.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="Sphere">
+      <div id="sphere" class="SphereHeader">
+        <h2>Сфери послуг</h2>
+      </div>
+      <div class="SphereContainer">
+        <div class="SphereItem">
+          <img src="./assets/images/Avalon.png" alt="" />
+          <ul>
+            <li>Рекламні ролики</li>
+            <li>Кінозйомки</li>
+            <li>Весільні ролики</li>
+            <li>Музичні кліпи</li>
+            <li>Художня зйомка</li>
+          </ul>
+        </div>
+        <div class="SphereItem">
+          <img src="./assets/images/Avalon.png" alt="" />
+          <ul>
+            <li>Моніторинг будівництв</li>
+            <li>Віртуальні тури</li>
+            <li>Фотограметрія</li>
+            <li>Панорами</li>
+          </ul>
+        </div>
+        <div class="SphereItem">
+          <img src="./assets/images/Avalon.png" alt="" />
+          <ul>
+            <li>Сільське господартство</li>
+            <li>Енергетика</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Video">
+      <p>
+        FAA Approved, fully insured and all-inclusive, at CineDrones we handle
+        all your drone cinematography needs from pre-to-post production. With
+        the most experienced team and most extensive aerial toolkit at your
+        disposal, there isn’t a drone related production service you won’t find
+        at CineDrones.
+      </p>
+      <!-- <iframe
+        class="YTVIDEO"
+        src="https://www.youtube.com/embed/bCV9UMKNUic?controls=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe> -->
+      <div class="video-foreground">
+        <div class="VideoBackground"></div>
+        <video controls autoplay loop muted>
+          <source
+            src="./assets/videos/Lviv Polytechnic National University __ Fly4Studio __ Аерозйомка Львів.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="TechEquipment">
+      <div id="equipment" class="TechEquipmentHeader">
+        <h2>Технічне обладнання</h2>
+      </div>
+      <div class="TechInfo">
+        <img src="./assets/images/Drone.png" alt="" />
+        <div class="TechInfoText">
+          <h3>DJI Mavic 2 Pro/Zoom</h3>
+          <p>
+            Ми завжди мріяли створити досконалий дрон. Інженерне диво, ідеальне
+            для аерозйомки. Дрон, що володіє всіма кращими технологіями DJI,
+            дрон, який перетворить світ аерозйомки. Ця мрія здійснилася. Ми
+            створили Mavic 2.
+          </p>
+        </div>
+      </div>
+      <div class="TechInfo">
+        <img src="./assets/images/Drone.png" alt="" />
+        <div class="TechInfoText">
+          <h3>DJI Mavic 2 Pro/Zoom</h3>
+          <p>
+            Ми завжди мріяли створити досконалий дрон. Інженерне диво, ідеальне
+            для аерозйомки. Дрон, що володіє всіма кращими технологіями DJI,
+            дрон, який перетворить світ аерозйомки. Ця мрія здійснилася. Ми
+            створили Mavic 2.
+          </p>
+        </div>
+      </div>
+      <div class="TechInfo">
+        <img src="./assets/images/Drone.png" alt="" />
+        <div class="TechInfoText">
+          <h3>DJI Mavic 2 Pro/Zoom</h3>
+          <p>
+            Ми завжди мріяли створити досконалий дрон. Інженерне диво, ідеальне
+            для аерозйомки. Дрон, що володіє всіма кращими технологіями DJI,
+            дрон, який перетворить світ аерозйомки. Ця мрія здійснилася. Ми
+            створили Mavic 2.
+          </p>
+        </div>
+      </div>
+      <div class="TechInfo">
+        <div class="Drones">
+          <h2>Дрони</h2>
+          <table class="styled-table" style="width: 60%">
+            <tr>
+              <th>Назва</th>
+              <th>Радіус дії</th>
+              <th>Макс. час польоту</th>
+              <th>Вага</th>
+            </tr>
+            <tr>
+              <td>DJI Matrice 210 RTK V2</td>
+              <td>8000м</td>
+              <td>до 33хв</td>
+              <td>4910г</td>
+            </tr>
+            <tr>
+              <td>DJI Mavic Pro 2</td>
+              <td>7000м</td>
+              <td>до 27хв</td>
+              <td>907г</td>
+            </tr>
+            <tr>
+              <td>DJI Matrice 210 RTK V2</td>
+              <td>7000м</td>
+              <td>до 27хв</td>
+              <td>743г</td>
+            </tr>
+            <tr>
+              <td>DJI FPV</td>
+              <td>16800м</td>
+              <td>до 20хв</td>
+              <td>795г</td>
+            </tr>
+            <tr>
+              <td>DJI Mavic Air 2</td>
+              <td>18500м</td>
+              <td>до 34хв</td>
+              <td>570г</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="Portfolio">
+      <div id="portfolio" class="PortfolioHeader"><h2>Портфоліо</h2></div>
+      <div class="PortfolioImages">
+        <div class="ImagesLeft">
+          <img src="./assets/images/L_1_Portfolio.png" alt="" />
+          <img src="./assets/images/L_2_Portfolio.png" alt="" />
+          <img src="./assets/images/L_3_Portfolio.png" alt="" />
+        </div>
+        <div class="ImagesRight">
+          <img src="./assets/images/R_1_Portfolio.png" alt="" />
+          <img src="./assets/images/R_2_Portfolio.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <footer id="contacts">
+      <p>Контакти</p>
+      <div id="contactsText">
+        <a target="_blank" href="https://www.instagram.com/fly4studio/"
+          ><img alt="" src="./assets/images/Instagram.png"
+        /></a>
+        <img alt="" src="./assets/images/phone.png" />
+      </div>
+    </footer>
+    <div id="ContactUS" class="ContactUS">
+      <button onclick="toggleContactUS()">&#10006;</button>
+      <form action="">
+        <div><h1>Contact us</h1></div>
+        <h2>Email</h2>
+        <input placeholder="Type your email" type="emeil" />
+        <h2>Message</h2>
+        <textarea
+          placeholder="Type your message"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button>Send</button>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
